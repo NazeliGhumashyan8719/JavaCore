@@ -1,4 +1,4 @@
-package myexamples;
+package homeworks;
 
 public class If {
 
