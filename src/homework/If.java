@@ -1,4 +1,4 @@
-package homeworks;
+package homework;
 
 public class If {
 
