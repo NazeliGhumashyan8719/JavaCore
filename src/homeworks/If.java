@@ -1,4 +1,4 @@
-package homework;
+package homeworks;
 
 public class If {
 
@@ -8,9 +8,9 @@ public class If {
         y = 13;
         z = 7;
         if (x > y) {
-            System.out.println("x is big from y");
+            System.out.println("x > y");
         if (z < y) {
-            System.out.println("z is small from y" );
+            System.out.println("z < y" );
         }
         }
     }
