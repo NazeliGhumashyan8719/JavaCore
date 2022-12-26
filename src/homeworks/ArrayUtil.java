@@ -47,7 +47,7 @@ public class ArrayUtil {
 
         int b = 0;
         for (int j = 0; j <= array.length; j++) {
-            if (j % 2 == 0) {
+            if (array[j] % 2 == 0) {
                 b = b + 1;
             }
         }
@@ -56,7 +56,7 @@ public class ArrayUtil {
 
         int k = 0;
         for (int j = 3; j <= array.length; j++) {
-            if (j % 2 == 1) {
+            if (array[j] % 2 == 1) {
                 k = k + 1;
             }
         }
