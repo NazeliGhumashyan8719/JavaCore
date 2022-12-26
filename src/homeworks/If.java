@@ -12,6 +12,6 @@ public class If {
         if (z < y) {
             System.out.println("z < y" );
         }
-        }
+        }//bolorn en pastore chisht em arats exel iharek))
     }
 }
