@@ -47,8 +47,8 @@ public class ArrayUtil {
         System.out.print(array[a]);
 
         int b = 0;
-        for (int j = 0; j <= array.length; j++) {
-            if (j % 2 == 0) {
+        for (int j = 0; j < array.length; j++) {
+            if (array[j] % 2 == 0) {
                 b = b + 1;
             }
         }
@@ -56,8 +56,8 @@ public class ArrayUtil {
         System.out.println(b);
 
         int k = 0;
-        for (int j = 3; j <= array.length; j++) {
-            if (j % 2 == 1) {
+        for (int j = 3; j < array.length; j++) {
+            if (array[j] % 2 == 1) {
                 k = k + 1;
             }
         }
