@@ -41,13 +41,14 @@ public class ArrayUtil {
         }
         System.out.println();
         System.out.print(array[0]);
+        System.out.println();
 
         int a = array.length - 1;
         System.out.print(array[a]);
 
         int b = 0;
         for (int j = 0; j <= array.length; j++) {
-            if (array[j] % 2 == 0) {
+            if (j % 2 == 0) {
                 b = b + 1;
             }
         }
@@ -56,7 +57,7 @@ public class ArrayUtil {
 
         int k = 0;
         for (int j = 3; j <= array.length; j++) {
-            if (array[j] % 2 == 1) {
+            if (j % 2 == 1) {
                 k = k + 1;
             }
         }
