@@ -23,8 +23,8 @@ public class CharArrayExample {
 
         char[] chars3 = {'j', 'a', 'v', 'a', 'l', 'o', 'l', 'y'};
         boolean b = false;
-        if ((chars3[chars3.length - 2] == 'l') & (chars3[chars3.length - 1] == 'y')) {
-            b = true;
+        if ((chars3[chars3.length - 2] == 'l') && (chars3[chars3.length - 1] == 'y')) {
+
             System.out.println(b);//ete verjanum e ly-ov tpel true
         }
 
