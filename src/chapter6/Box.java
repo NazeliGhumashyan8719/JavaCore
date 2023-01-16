@@ -16,4 +16,30 @@ public class Box {
         System.out.print("Объем равен ");
         System.out.println(width * height * depth);
     }
+
+    // рассчитать и возврвтиь объем
+    double volume() {
+        return width * height * depth;
+    }
+
+    // устоновить размеры паралелепипеда
+    void setDim(double w, double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+    }
+
+    // Это конструктор класса Box
+    Box() {
+        System.out.println("конструирование объекта Box");
+        width = 10;
+        height = 10;
+        depth = 10;
+    }
+
+
 }
+
+
+
+
