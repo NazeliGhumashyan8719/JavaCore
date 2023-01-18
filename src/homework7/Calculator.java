@@ -4,28 +4,31 @@ public class Calculator {
     double plus(double a, double b) {
         double sum;
         sum = a + b;
-        System.out.print(sum);
-        System.out.println();
-
         return sum;
 
     }
-
     double minus(double a, double b) {
         double dif;
         dif = a - b;
-        System.out.print(dif);
         return dif;
     }
 
     double multiply(double a, double b) {
         double mul;
         mul = a * b;
-        System.out.println();
-        System.out.print(mul);
         return mul;
     }
+    double divide(double a, double b) {
+        if (b == 0) {
+            System.out.println("Թիվը 0-ի չի բաժանվում");
+            return -1;
+        }
+        return a / b;
+
+    }
 }
+
+
 
 
 
