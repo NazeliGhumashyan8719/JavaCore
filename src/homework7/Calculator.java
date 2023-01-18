@@ -7,6 +7,7 @@ public class Calculator {
         return sum;
 
     }
+
     double minus(double a, double b) {
         double dif;
         dif = a - b;
@@ -18,6 +19,7 @@ public class Calculator {
         mul = a * b;
         return mul;
     }
+
     double divide(double a, double b) {
         if (b == 0) {
             System.out.println("Թիվը 0-ի չի բաժանվում");
