@@ -1,5 +1,7 @@
-package chapter6;
+package box;
 
+// В этом классе определяется целсленный очистекб где
+// можно хранить до 10  целсленных значений
 public class Stack {
     int stck[] = new int[10];
     int tos;
@@ -25,10 +27,9 @@ public class Stack {
 
         } else {
             return stck[tos--];
-
-
         }
-
-
     }
 }
+
+
+

@@ -1,4 +1,5 @@
-package chapter6;
+package box1;
+
 
 public class BoxDemo {
 
@@ -17,4 +18,6 @@ public class BoxDemo {
         System.out.println("Объем равен " + vol);
     }
 }
+
+
 

@@ -1,4 +1,5 @@
-package chapter6;
+package box;
+
 
 public class TestStack {
 
@@ -20,10 +21,11 @@ public class TestStack {
             System.out.println(mystack2.pop());
 
         }
-
     }
-
 }
+
+
+
 
 
 

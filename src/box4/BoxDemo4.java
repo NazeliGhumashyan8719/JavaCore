@@ -1,13 +1,13 @@
-package chapter6;
+package box4;
 
 public class BoxDemo4 {
 
     public static void main(String[] args) {
-       Box mybox1 = new Box();
-       Box mybox2 = new Box();
-       double vol;
+        Box mybox1 = new Box();
+        Box mybox2 = new Box();
+        double vol;
 
-       // присвоить значения переменным экземпляра mybox1
+        // присвоить значения переменным экземпляра mybox1
         mybox1.width = 10;
         mybox1.height = 20;
         mybox1.depth = 15;
@@ -23,8 +23,10 @@ public class BoxDemo4 {
         System.out.println(vol);
         // получить объем второго паралелепипеда
         vol = mybox2.volume();
-        System.out.println(vol);
+        System.out.println("Объем равен " + vol);
 
 
     }
 }
+
+

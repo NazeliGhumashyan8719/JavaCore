@@ -1,7 +1,7 @@
-package chapter6;
+package box3;
+
 
 public class BoxDemo3 {
-
     public static void main(String[] args) {
         Box mybox1 = new Box();
         Box mybox2 = new Box();
@@ -23,3 +23,6 @@ public class BoxDemo3 {
         mybox2.volumе();
     }
 }
+
+
+

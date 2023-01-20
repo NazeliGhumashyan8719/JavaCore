@@ -1,4 +1,4 @@
-package chapter6;
+package box2;
 
 public class BoxDemo2 {
 
@@ -26,3 +26,5 @@ public class BoxDemo2 {
 
     }
 }
+
+
