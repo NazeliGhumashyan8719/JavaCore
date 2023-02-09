@@ -19,13 +19,16 @@ public class Stack {
 
     public int pop() {
         if (size < 0) {
-            System.out.println("stack-ը դատարկ է");
             return 0;
-        } else {
+        }
             return array[size--];
         }
+        public  boolean isEmpty() {
+        return size == -1;
+        }
     }
-}
+
+
 
 
 
