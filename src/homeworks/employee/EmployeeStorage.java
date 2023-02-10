@@ -2,6 +2,7 @@ package homeworks.employee;
 
 public class EmployeeStorage {
 
+
     private Employee[] array = new Employee[10];
 
     private int size = 0;

@@ -41,7 +41,6 @@ public class EmployeeDemo {
                     employeeStorage.add(employee);
                     System.out.println("Employee is created");
 
-
                     break;
                 case "2":
                     employeeStorage.print();
