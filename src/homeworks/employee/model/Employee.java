@@ -1,5 +1,7 @@
 package homeworks.employee.model;
 
+import homeworks.employee.util.DateUtil;
+
 import java.util.Objects;
 import java.util.Date;
 
@@ -8,37 +10,14 @@ public class Employee {
     private String surname;
     private String employeeId;
     private double salary;
-    private String company;
+    private Company company;
     private String position;
     private boolean active = true;
-    private Date registerDate = new Date();
+    private Date registerDate;
     private Date dateOfBirthday;
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Employee employee = (Employee) o;
-        return Double.compare(employee.salary, salary) == 0 && active == employee.active
-                && Objects.equals(name, employee.name) && Objects.equals(surname, employee.surname)
-                && Objects.equals(employeeId, employee.employeeId) && Objects.equals(company, employee.company) && Objects.equals(position, employee.position) &&
-                Objects.equals(registerDate, employee.registerDate) && Objects.equals(dateOfBirthday, employee.dateOfBirthday);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, surname, employeeId, salary, company, position, active, registerDate, dateOfBirthday);
-    }
-
-    public Date getDateOfBirthday() {
-        return dateOfBirthday;
-    }
-
-    public void setDateOfBirthday(Date dateOfBirthday) {
-        this.dateOfBirthday = dateOfBirthday;
-    }
-
-    public Employee(String name, String surname, String employeeId, double salary, String company, String position) {
+    public Employee(String name, String surname, String employeeId, double salary, Company company,
+                    String position, Date registerDate, Date dateOfBirthday) {
         this.name = name;
         this.surname = surname;
         this.employeeId = employeeId;
@@ -46,6 +25,8 @@ public class Employee {
         this.salary = salary;
         this.company = company;
         this.position = position;
+        this.registerDate = registerDate;
+        this.dateOfBirthday = dateOfBirthday;
     }
 
     public Employee() {
@@ -83,11 +64,11 @@ public class Employee {
         this.salary = salary;
     }
 
-    public String getCompany() {
+    public Company getCompany() {
         return company;
     }
 
-    public void setCompany(String company) {
+    public void setCompany(Company company) {
         this.company = company;
     }
 
@@ -107,6 +88,36 @@ public class Employee {
         this.active = active;
     }
 
+    public Date getRegisterDate() {
+        return registerDate;
+    }
+
+    public void setRegisterDate(Date registerDate) {
+        this.registerDate = registerDate;
+    }
+
+    public Date getDateOfBirthday() {
+        return dateOfBirthday;
+    }
+
+    public void setDateOfBirthday(Date dateOfBirthday) {
+        this.dateOfBirthday = dateOfBirthday;
+
+}
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return Double.compare(employee.salary, salary) == 0 && active == employee.active && Objects.equals(name, employee.name) && Objects.equals(surname, employee.surname) && Objects.equals(employeeId, employee.employeeId) && Objects.equals(company, employee.company) && Objects.equals(position, employee.position) && Objects.equals(registerDate, employee.registerDate) && Objects.equals(dateOfBirthday, employee.dateOfBirthday);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, surname, employeeId, salary, company, position, active, registerDate, dateOfBirthday);
+    }
+
     @Override
     public String toString() {
         return "Employee{" +
@@ -117,9 +128,9 @@ public class Employee {
                 ", company='" + company + '\'' +
                 ", position='" + position + '\'' +
                 ", active=" + active +
-                ", registerDate=" + registerDate +
-                ", dateOfBirthday=" + dateOfBirthday +
+                ", registerDate=" + DateUtil.dateToString(registerDate) +
+                ", dateOfBirthday=" + DateUtil.dateToString(dateOfBirthday) +
                 '}';
     }
-}
 
+}

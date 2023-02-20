@@ -1,5 +1,6 @@
 package homeworks.employee.storage;
 
+import homeworks.employee.model.Company;
 import homeworks.employee.model.Employee;
 
 public class EmployeeStorage {
@@ -48,10 +49,10 @@ public class EmployeeStorage {
         return null;
     }
 
-    public void searchEmployeeByCompanyName(String companyName) {
+    public void searchEmployeeByCompany(Company company) {
         for (int i = 0; i < size; i++) {
             Employee employee = employees[i];
-            if (employee.getCompany().equals(companyName)) {
+            if (employee.getCompany().equals(company)) {
                 System.out.println(employee);
 
             }
