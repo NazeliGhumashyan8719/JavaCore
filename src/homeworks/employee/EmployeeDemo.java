@@ -18,6 +18,7 @@ public class EmployeeDemo implements Commands {
     public static void main(String[] args) throws ParseException {
         boolean isRun = true;
         Company company = new Company("company001", "company example", "Gyumri", "010223311");
+        company.setEmployeeCount(3);
         companyStorage.add(company);
         employeeStorage.add(new Employee("Ara", "Amyan", "a001", 1000, company, "QA", new Date(), DateUtil.stringToDate("12/02/2023")));
         employeeStorage.add(new Employee("Gor", "Papyan", "a002", 2000, company, "jr. manager", new Date(), DateUtil.stringToDate("01/02/2018")));
@@ -169,7 +170,7 @@ public class EmployeeDemo implements Commands {
         String companyId = scanner.nextLine();
         Company companyById = companyStorage.getCompanyById(companyId);
         if (companyById != null) {
-            System.out.println("Please input name,surname,employeeId,salary,companyName,position, dateOfBirthday(28/05/2019)");
+            System.out.println("Please input name,surname,employeeId,salary,position, dateOfBirthday(28/05/2019)");
             String employeeDataStr = scanner.nextLine();
             String[] employeeData = employeeDataStr.split(",");
             String employeeId = employeeData[2];
@@ -177,7 +178,7 @@ public class EmployeeDemo implements Commands {
             if (employeeById == null) {
                 Employee employee = new Employee(employeeData[0], employeeData[1], employeeData[2],
                         Double.parseDouble(employeeData[3]), companyById,
-                        employeeData[5], new Date(), DateUtil.stringToDate(employeeData[6]));
+                        employeeData[4], new Date(), DateUtil.stringToDate(employeeData[5]));
                 employeeStorage.add(employee);
                 companyById.setEmployeeCount(companyById.getEmployeeCount() + 1);
                 System.out.println("Employee was added");
