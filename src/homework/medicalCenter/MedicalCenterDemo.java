@@ -113,7 +113,7 @@ public class MedicalCenterDemo implements Commands {
             doctorById.setSurname(doctorData[1]);
             doctorById.setEmail(doctorData[2]);
             doctorById.setPhone(doctorData[3]);
-            doctorById.setProfession(doctorData[4]);
+            doctorById.setProfession(Profession.valueOf(doctorData[4]));
             System.out.println("doctor was added");
         } else {
             System.out.println("Doctor with " + id + "does not exist!");
@@ -141,6 +141,11 @@ public class MedicalCenterDemo implements Commands {
 
     private static void addDoctor() {
         System.out.println("Please input id,name,surname,email,phone,professional");
+        Profession[] professionals = Profession.values();
+        System.out.println("Please choose from professionals");
+        for (Profession profession : professionals) {
+            System.out.println(profession);
+        }
         String doctorDataStr = scanner.nextLine();
         String[] doctorData = doctorDataStr.split(",");
         String doctorId = doctorData[0];
@@ -152,7 +157,7 @@ public class MedicalCenterDemo implements Commands {
             doctor.setSurname(doctorData[2]);
             doctor.setEmail(doctorData[3]);
             doctor.setPhone(doctorData[4]);
-            doctor.setProfession(doctorData[5]);
+            doctor.setProfession(Profession.valueOf(doctorData[5]));
             personStorage.add(doctor);
             System.out.println("doctor added");
         } else {
