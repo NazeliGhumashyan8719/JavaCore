@@ -150,18 +150,22 @@ public class MedicalCenterDemo implements Commands {
         String[] doctorData = doctorDataStr.split(",");
         String doctorId = doctorData[0];
         Doctor doctorById = personStorage.getDoctorById(doctorId);
-        if (doctorById == null) {
-            Doctor doctor = new Doctor();
-            doctor.setId(doctorId);
-            doctor.setName(doctorData[1]);
-            doctor.setSurname(doctorData[2]);
-            doctor.setEmail(doctorData[3]);
-            doctor.setPhone(doctorData[4]);
-            doctor.setProfession(Profession.valueOf(doctorData[5]));
-            personStorage.add(doctor);
-            System.out.println("doctor added");
-        } else {
-            System.out.println("Doctor with " + doctorId + "already exist");
+        try {
+            if (doctorById == null) {
+                Doctor doctor = new Doctor();
+                doctor.setId(doctorId);
+                doctor.setName(doctorData[1]);
+                doctor.setSurname(doctorData[2]);
+                doctor.setEmail(doctorData[3]);
+                doctor.setPhone(doctorData[4]);
+                doctor.setProfession(Profession.valueOf(doctorData[5]));
+                personStorage.add(doctor);
+                System.out.println("doctor added");
+            } else {
+                System.out.println("Doctor with " + doctorId + "already exist");
+            }
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Doctor is incorrect.Please try again");
         }
     }
 }
