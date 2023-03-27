@@ -1,4 +1,4 @@
-package mytests.example;
+package othertests.example.book;
 
 public class BookStorage {
     private Book[] array = new Book[10];

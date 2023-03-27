@@ -1,4 +1,4 @@
-package mytests;
+package othertests;
 
 public class MySecondApp {
 

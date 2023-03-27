@@ -1,4 +1,4 @@
-package mytests;
+package othertests;
 
 public class Feline {
     public static void main(String[] args) {

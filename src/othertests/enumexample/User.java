@@ -1,4 +1,4 @@
-package mytests.enumexample;
+package othertests.enumexample;
 
 public class User {
 

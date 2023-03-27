@@ -1,4 +1,4 @@
-package mytests.example;
+package othertests.example.book;
 
 public class Book {
 

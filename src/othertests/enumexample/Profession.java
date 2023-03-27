@@ -1,4 +1,4 @@
-package mytests.enumexample;
+package othertests.enumexample;
 
 public enum Profession {
 
@@ -9,7 +9,7 @@ public enum Profession {
     NEUROLOGIST("Nairi"),
     THERAPIST("Izmirlyan");
      private String clinic;
-     // ete uzem xndzorin guyn tam perq e String clinic tak grem private String color u konstruktori mej , dnem u grem color
+     // ete uzem hatkutyun tam perq e String clinic tak grem private String hatkutyun u konstruktori mej , dnem u grem hatkutyun
 
     Profession(String clinic) {
         this.clinic = clinic;

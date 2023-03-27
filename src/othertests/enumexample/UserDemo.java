@@ -1,4 +1,5 @@
-package mytests.enumexample;
+package othertests.enumexample;
+
 
 import java.util.Scanner;
 

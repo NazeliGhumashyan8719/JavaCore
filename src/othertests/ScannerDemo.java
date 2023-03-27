@@ -1,4 +1,4 @@
-package mytests;
+package othertests;
 
 import java.util.Scanner;
 
