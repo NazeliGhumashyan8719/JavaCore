@@ -37,8 +37,6 @@ public class FileUtil {
     }
 
     private static void findLines(String filePath, String keyword) {
-        //pti implement aneq hima es ptichken khanem vor secn banery chstugi, bayc sa inchi eq aranc grel push anum?
-        //
     }
 
 
