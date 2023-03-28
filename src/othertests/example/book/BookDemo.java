@@ -1,5 +1,6 @@
 package othertests.example.book;
 
+
 import java.util.Scanner;
 
 public class BookDemo {

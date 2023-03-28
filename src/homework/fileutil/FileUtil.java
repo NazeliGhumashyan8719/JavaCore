@@ -4,9 +4,10 @@ package homework.fileutil;
 import java.io.*;
 import java.util.Scanner;
 
+
 public class FileUtil {
 
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
         System.out.println("please input homework path");
@@ -36,6 +37,8 @@ public class FileUtil {
     }
 
     private static void findLines(String filePath, String keyword) {
+        //pti implement aneq hima es ptichken khanem vor secn banery chstugi, bayc sa inchi eq aranc grel push anum?
+        //
     }
 
 
