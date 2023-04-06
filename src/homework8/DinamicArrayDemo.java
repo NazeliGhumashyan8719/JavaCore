@@ -4,35 +4,16 @@ public class DinamicArrayDemo {
 
     public static void main(String[] args) {
         DinamicArray da = new DinamicArray();
+        for (int i = 0; i < 10; i++) {
+            da.add(i+1);
+
+        }
 
 
-        da.add(5);
-        da.add(5);
-        da.add(5);
-        da.add(5);
-        da.add(5);
-        da.add(5);
-        da.add(5);
-        da.add(5);
-        da.add(5);
-        da.add(5);
-        da.add(5);
-        da.add(5);
-        da.add(5);
-        da.add(7);
-        da.add(7);
-        da.add(2);
-        da.add(2);
-        da.add(2);
+        da.print();
+        da.add(1,222);
+        da.print();
 
-        System.out.println(da.getByIndex(0));
-        da.print();
-        da.set(1,4);
-        da.print();
-        System.out.println(da.exists(2));
-        da.print();
-        System.out.println(da.getIndexByValue(6));
-        da.add(8,11);
-        da.print();
     }
 }
+

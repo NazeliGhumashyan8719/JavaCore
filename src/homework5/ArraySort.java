@@ -13,13 +13,13 @@ public class ArraySort {
                 }
             }
         }
-        for (int n = 0; n < numbers.length; n++) {         // մասսիվի էլեմենտները դասավորել նվազման կարգով
+        for (int n = 0; n < numbers.length; n++) {
             System.out.print(numbers[n] + " ");
 
         }
         System.out.println();
 
-        for (int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length; i++) {             // մասսիվի էլեմենտները դասավորել նվազման կարգով
             for (int j = 0; j < numbers.length - 1; j++) {
                 if (numbers[j] < numbers[j + 1]) {
                     int min = numbers[j];
